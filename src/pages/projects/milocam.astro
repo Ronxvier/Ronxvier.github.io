@@ -1,0 +1,42 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/header.astro';
+import Footer from '../../components/Footer.astro';
+const {pageTitle} = "VimMotions";
+---
+<style>
+			a:link {
+		  color: #CBBACD;
+		  font-family: 'JetBrains Mono', monospace;
+		  font-weight: 600;
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  color: #CBBACD;
+		  font-family: 'JetBrains Mono', monospace;
+		  font-weight: 600;
+		  text-decoration: none;
+		}
+
+		a:hover,
+		a:focus {
+		  color: #D5C4D6;
+		  text-decoration: underline;
+		}
+</style>
+
+<html lang=en>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{pageTitle}</title>
+	<Header />
+		<h1>MiloCam</h1>
+		<p><a href="https://github.com/RonelXavier/MiloCam">[MiloCam]</a> is a super small Machine Learning project that I started to make watching the dog (Milo) easier. Milo can be super quiet which makes knowing when he needs to go out near impossible sometimes, so I thought a system that could detect Milo and notify me when he needs attention would be a game changer.</p>
+		<img src="https://private-user-images.githubusercontent.com/188875524/470598499-fedf0f57-faed-44b8-89da-aed01ad48be9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTM3MTUxMDEsIm5iZiI6MTc1MzcxNDgwMSwicGF0aCI6Ii8xODg4NzU1MjQvNDcwNTk4NDk5LWZlZGYwZjU3LWZhZWQtNDRiOC04OWRhLWFlZDAxYWQ0OGJlOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyOFQxNTAwMDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNWE4M2VkYWJiZGM3M2FlYjI2YTM4ZGE4Zjg5Y2UxZDE4NGFiOWIyYjc4OTI0NGRhN2U1YzE5Y2IwMjVlMzcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.kqEqPYmPot_0GpZPpLC_MUyV9SBGko3oBPVWEVXKekM" style="width: 700px; height: auto;">
+		<p>This was my first time experimenting with computer vision and open source detection models, so I started this project off small. I picked the <a href="https://huggingface.co/facebook/detr-resnet-50">facebook/detr-resnet-50</a> model for its ease of use, and the discord.py library to send notifications whenever the model detected a dog with over 90% confidence. I've actually made a discord bot in the past to serve as a coding assistant, so this part of the project was fairly straightforward.</p>
+		<img src="https://private-user-images.githubusercontent.com/188875524/470598412-d07ab4df-cf7e-45c0-a45c-b9139acd3ba5.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTM3MTUxMDEsIm5iZiI6MTc1MzcxNDgwMSwicGF0aCI6Ii8xODg4NzU1MjQvNDcwNTk4NDEyLWQwN2FiNGRmLWNmN2UtNDVjMC1hNDVjLWI5MTM5YWNkM2JhNS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyOFQxNTAwMDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNDNhYzgxMzEyYjVhNTJkMTZhMjdlOTFmZWFkNWFjZDcwMGY0MDI5YmVlOGU3Y2U2YjBlM2NlNTNiYWU4YTQ4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.IZZ5jghFz76hr-woJ3krJIHqs5L2VBiP2aZZBBbbmno" style="width: 500px; height: auto;">
+	<Footer />
+</html>

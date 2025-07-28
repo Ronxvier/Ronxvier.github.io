@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+import Header from '../components/header.astro';
+import Footer from '../components/Footer.astro';
+const {pageTitle} = "Projects";
+---
+<style>
+			a:link {
+		  color: #CBBACD;
+		  font-family: 'JetBrains Mono', monospace;
+		  font-weight: 600;
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  color: #CBBACD;
+		  font-family: 'JetBrains Mono', monospace;
+		  font-weight: 600;
+		  text-decoration: none;
+		}
+
+		a:hover,
+		a:focus {
+		  color: #D5C4D6;
+		  text-decoration: underline;
+		}
+</style>
+
+<html lang=en>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{pageTitle}</title>
+	<Header />
+		<h1>Projects</h1>
+		<li><a href="/projects/vimmotions">[VimMotions]</a>: Chrome Extension that allows for Vim-style keybindings for efficient text navigation and editing in browser inputs.</li>
+		<p></p>
+		<li><a href="/projects/milocam">[MiloCam]</a>: Glorified nanny-cam that uses facebook/detr-resnet-50 from Hugging Face to detect my dog (Milo) via webcam and sends me a Discord message when he's at the back door.</li>
+		<p></p>
+		<li><a href="/projects/ymirnvim">[ymir.nvim]</a>: A snowy mountain sunset theme for a better looking Neovim config.</li>
+		<p>There are some more projects on Github, but they didn't quite make the cut.</p>
+	<Footer />
+</html>

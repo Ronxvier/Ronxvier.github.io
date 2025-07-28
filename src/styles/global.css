@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap');
+
+html {
+  background-color: #121212;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1.25rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #EAEAEA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Technical headings: spaced, geometric, bold */
+h1, h2 {
+  margin: 1.2rem 0 0.8rem;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #EAEAEA;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p {
+  color: #EAEAEA;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+/* Muted list styling */
+li {
+  color: #A3A3A3;
+  margin-left: 1.2rem;
+  line-height: 1.5;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+}
+
+/* Nav Container */
+.nav-links {
+  display: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Nav Links */
+.nav-links a {
+  display: block;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  color: #EAEAEA;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+/* Expanded state (mobile toggle) */
+.expanded {
+  display: block;
+}
+
+/* Desktop View */
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: static;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    margin-right: 1.5rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Hamburger Icon */
+.hamburger {
+  padding-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hamburger .line {
+  width: 28px;
+  height: 2px;
+  margin: 4px 0;
+  background-color: #EAEAEA;
+  transition: all 0.2s;
+}
+

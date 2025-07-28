@@ -1,0 +1,59 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+const pageTitle = "ronxvier";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+	<div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
+	  <div>
+	    <h1 style="margin-bottom: 0;">Ronel Xavier</h1>
+	    <h2 style="margin-top: 0; color: #8a9fbf;">[ronxvier]</h2>
+	  </div>
+	  <img
+	    src="https://avatars.githubusercontent.com/u/188875524?v=4"
+	    alt="GitHub profile picture"
+	    style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;"
+	  />
+	</div>
+
+	<p>Currently either Programming, Studying, Weightlifting, Writing, Climbing, Wrestling, Reading, or Running.</p>
+	<p>This site exists primarily to document the <a href="../projects">[projects]</a> I've completed as I add more throughout uni. I've also added a blog section, which I may use to keep record of my notes, given the blog entries use the same markdown format as <a href="https://obsidian.md" target = "_blank">[obsidian.md]</a>.</p>
+    <Footer />
+
+  </body>
+</html>
+
+
+
+<style>
+			a:link {
+		  color: #A28D9E;
+		  font-family: 'JetBrains Mono', monospace;
+		  font-weight: 100;
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  color: #CBBACD;
+		  font-family: 'JetBrains Mono', monospace;
+		  font-weight: 300;
+		  text-decoration: none;
+		}
+
+		a:hover,
+		a:focus {
+		  color: #D5C4D6;
+		  text-decoration: underline;
+		}
+	</style>
+
