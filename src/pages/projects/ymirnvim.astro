@@ -2,7 +2,8 @@
 import '../../styles/global.css';
 import Header from '../../components/header.astro';
 import Footer from '../../components/Footer.astro';
-const {pageTitle} = "VimMotions";
+const {pageTitle} = "ymirnvim";
+import ymirnvim from '../../assets/ymirnvim.png';
 ---
 <style>
 			a:link {
@@ -34,7 +35,7 @@ const {pageTitle} = "VimMotions";
 	<title>{pageTitle}</title>
 	<Header />
 		<h1>ymir.nvim</h1>
-		<img src="https://private-user-images.githubusercontent.com/188875524/471523886-fb953fd7-cac6-41d2-affa-98e3bf78bc13.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTM3MDk3MTcsIm5iZiI6MTc1MzcwOTQxNywicGF0aCI6Ii8xODg4NzU1MjQvNDcxNTIzODg2LWZiOTUzZmQ3LWNhYzYtNDFkMi1hZmZhLTk4ZTNiZjc4YmMxMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyOFQxMzMwMTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mN2FjMzE2NTdhNWE5ZDhiYThiMDk2MjFiNDE0MTNkMzFkMjBhYjAwYTg0MzY1NmZiYWJkOTM5MjBhNWEyYzUzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.q9MK4in7QFsImeEU6OKxAfnlgZ-TPsJD2iwa3mok69Q" style="width:700px; height:auto;" >
+		<img src={ymirnvim.src} style="width:700px; height:auto;" >
 		<p>This project started as an attempt to build a neovim theme plugin from scratch, but as I eventually learned that would be immensely impractical, with neovim colorschemes (specifically highlight groups) spanning across hundreds of lines.</p>
 		<p>I ended up forking sunset.nvim, which had actually been forked from dracula.nvim prior. When building out this colorscheme, I found almost no comprehensive resources on how to build a neovim theme. mfs were genuinely out here talking about the aesthetics of different colors and how to build a color pallette but almost nobody was actually explaining what a vim highlight group was.</p>
 		<p>It's for this reason that I wrote my first medium article, titled <a href="https://medium.com/@ronxvier/build-your-own-neovim-colorscheme-in-lua-3b01adf019e0">"Build Your Own Neovim Colorscheme in Lua"</a> which dives into the technical aspects of building your own colorscheme and later publishing on Github.</p>

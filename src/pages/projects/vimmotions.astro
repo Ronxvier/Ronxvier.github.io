@@ -3,6 +3,7 @@ import '../../styles/global.css';
 import Header from '../../components/header.astro';
 import Footer from '../../components/Footer.astro';
 const {pageTitle} = "VimMotions";
+import vimmotions from '../../assets/vimmotions.png';
 ---
 <style>
 			a:link {
@@ -34,7 +35,7 @@ const {pageTitle} = "VimMotions";
 	<title>{pageTitle}</title>
 	<Header />
 		<h1>VimMotions</h1>
-		<img src="https://github.com/RonelXavier/VimMotions/raw/main/assets/img1.png" style="width:650px; height:auto;"> 
+		<img src={vimmotions.src} style="width:650px; height:auto;"> 
 		<p><a href="https://chromewebstore.google.com/detail/vim-motions-for-chrome/ejggdgkfjmoggjddkbbmgpkhakgbghmg?hl=en" target="_blank">[VimMotions]</a> is the first real project I had ever <a href="https://github.com/RonelXavier/VimMotions" target="_blank">[published on github]</a>, and it's creation came from hating editing text outside of vim. I hadn't ever worked in javascript before, so this project was entirely new to me. I learned everything from basic event listeners to traversing the DOM.</p>
 		<p>It was only during this project that I learned about how many different ways the browser takes in text input, whether it's in a content-editable div format, or a textarea, or some kind of Virtual DOM. For the sake of widespread functionality and simplicity I decided to handle both textarea and content-editable div based input. Existing extensions that aimed to provide vim motion functionality only did so for virtual DOM or textarea based input, so I didn't find a lot of documentation regarding dealing with content-editable inputs.</p>
 		<p>I stopped development on this project a while ago, but occasionally I'll look back on the Chrome Web Store page and see a couple hundred users and think to update it or rebuild it. I have some ideas about injecting keycodes straight into the browser rather than manipulating the text inputs themselves, and I'm certain that's what the Virtual-DOM vim emulators are doing. However, I've realized I might honestly might shove a cactus down my throat before doing that much javascript again, so I wouldn't expect an update anytime soon.</p>
