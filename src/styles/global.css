@@ -88,7 +88,7 @@ li {
 }
 
 /* Desktop View */
-@media screen and (min-width: 636px) {
+@media screen and (min-width: 480px) {
   .nav-links {
     display: flex;
     justify-content: flex-start;
@@ -102,6 +102,9 @@ li {
     display: inline-block;
     margin-right: 1.5rem;
     padding: 0.5rem 0;
+  }
+  .hamburger {
+    display: none;
   }
 }
 

@@ -29,7 +29,11 @@ const pageTitle = "ronxvier";
 	<p>Currently either Programming, Studying, Weightlifting, Writing, Climbing, Wrestling, Reading, or Running.</p>
 	<p>This site exists primarily to document the <a href="../projects">[projects]</a> I've completed as I add more throughout uni. I've also added a blog section, which I may use to keep record of my notes, given the blog entries use the same markdown format as <a href="https://obsidian.md" target = "_blank">[obsidian.md]</a>.</p>
     <Footer />
-
+	  <script>
+	    document.querySelector('.hamburger')?.addEventListener('click', () => {
+	      document.querySelector('.nav-links')?.classList.toggle('expanded');
+	    });
+	  </script>
   </body>
 </html>
 
