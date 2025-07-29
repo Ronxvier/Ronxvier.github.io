@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Technical headings: spaced, geometric, bold */
+/* Headings */
 h1, h2 {
   margin: 1.2rem 0 0.8rem;
   font-family: 'Space Grotesk', sans-serif;
@@ -36,13 +36,14 @@ h2 {
   font-size: 1.75rem;
 }
 
+/* Paragraphs */
 p {
   color: #EAEAEA;
   margin: 1rem 0;
   font-weight: 400;
 }
 
-/* Muted list styling */
+/* List items */
 li {
   color: #A3A3A3;
   margin-left: 1.2rem;
@@ -51,23 +52,24 @@ li {
   font-size: 0.95rem;
 }
 
-/* Nav Container */
-/*.nav-links {
-  display: none;
-  margin: 0;
+/* Nav Container – horizontal by default */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
   padding: 0;
   background: transparent;
-  position: absolute;
-  top: 5rem;
-  left: 0;
   width: 100%;
-  text-align: center;
-} */
+}
 
 /* Nav Links */
 .nav-links a {
-  display: block;
-  padding: 0.75rem 0;
+  display: inline-block;
+  padding: 0.5rem 0;
   font-size: 1rem;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 500;
@@ -82,34 +84,30 @@ li {
   text-decoration: underline;
 }
 
-/* Expanded state (mobile toggle) */
+/* Expanded state (for future JS toggle, if needed) */
 .expanded {
   display: block;
 }
 
-/* Desktop View */
+/* Desktop View Overrides */
 @media screen and (min-width: 480px) {
-
   .nav-links {
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
-    position: static;
-    width: auto;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
     margin-left: 0;
   }
 
   .nav-links a {
-    display: inline-block;
-    margin-right: 1.5rem;
     padding: 0.5rem 0;
   }
+
   .hamburger {
     display: none;
   }
 }
 
-/* Hamburger Icon */
+/* Hamburger Icon (not used right now, but styled) */
 .hamburger {
   padding-right: 1rem;
   cursor: pointer;
