@@ -52,7 +52,7 @@ li {
 }
 
 /* Nav Container */
-.nav-links {
+/*.nav-links {
   display: none;
   margin: 0;
   padding: 0;
@@ -62,7 +62,7 @@ li {
   left: 0;
   width: 100%;
   text-align: center;
-}
+} */
 
 /* Nav Links */
 .nav-links a {
@@ -89,6 +89,7 @@ li {
 
 /* Desktop View */
 @media screen and (min-width: 480px) {
+
   .nav-links {
     display: flex;
     justify-content: flex-start;
