@@ -3,7 +3,7 @@
 import '../styles/global.css';
 import Header from '../components/header.astro';
 import Footer from '../components/Footer.astro';
-const pageTitle = "About Me";
+const pageTitle = "About";
 const identity = {
 	firstName: "Ron",
 	country: "United States",
@@ -38,16 +38,18 @@ const textCase = "uppercase";
 	</head>
 	<body>
 		<Header />
-		<h1 style="margin-bottom: 0">{pageTitle}</h1>
-		<img src="https://thefilmera.com/2018/01/tumblr_p23z9htmv31qkz08qo1_540.gif">
-		<p>Currently I'm...</p>
+		<h1 style="margin-bottom:0">{pageTitle}</h1>
+		<h3 style="margin-bottom:0">Overview</h3>
 		<ul>
-			<li>A First-year ECE student @ NC State</li>
-			<li>Working with Python, Rust, Javascript, and Lua</li>
-			<li>Experimenting with new developer tools</li>
-			<li>Getting back into meditation</li>
+		  <p>
+		  I'm a first-year Electrical and Computer Engineering student at NC State with a focus on systems-level programming, developer tools, and web programming. As of right now I'm doing most of my work in Rust, Python, JavaScript, and Lua, and I'm working on improving my skills in these technologies along with learning frameworks like React.
+		  </p>
+		  <p>
+		    Right now, I'm building personal developer tools and web apps. I'm enjoying experimenting with new frameworks and pushing my own understanding of how things work under the hood. Outside of code, I'm revisiting meditation and endurance running.
+		  </p>	  
 		</ul>
-		<p>You can find me on:</p>
+		<p></p>
+		<h3>You can find me on:</h3>
 		<li><a href="https://www.github.com/Ronxvier" target="_blank">[Github]</a></li>
 		<li><a href="https://www.linkedin.com/in/ronel-xavier-a0a574178/"target="_blank">[LinkedIn]</a></li>
 		<li><a href="https://www.medium.com/@ronxvier"target="_blank">[Medium]</a></li>
@@ -55,6 +57,7 @@ const textCase = "uppercase";
 		<li><a href="https://www.instagram.com/ronxvier"target="_blank">[Instagram]</a></li>
 		<li><a href="https://ultrarunning.com/calendar/runner/view/Ronel-Xavier-23be9a98-fab8-11ef-beeb-8e80a249bae3"target="_blank">[Ultra Running Magazine]</a></li>
 	</body>
+
 </html>
 
 
