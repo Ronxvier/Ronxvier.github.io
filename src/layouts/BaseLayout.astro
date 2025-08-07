@@ -16,18 +16,19 @@ const pageTitle = "ronxvier";
     <Header />
 	<div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
 	  <div>
-	    <h1 style="margin-bottom: 0;">Ronel Xavier</h1>
-	    <h2 style="margin-top: 0; color: #8a9fbf;">[ronxvier]</h2>
+      <h1 class="mainhead">Ronel Xavier</h1>
+	    <h2 class="subhead">[ronxvier]</h2>
 	  </div>
 	  <img
 	    src="https://avatars.githubusercontent.com/u/188875524?v=4"
 	    alt="GitHub profile picture"
-	    style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;"
+	    style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover;"
 	  />
 	</div>
-
-	<p>"Volume negates luck."</p>
-	<p>This site exists primarily to document the <a href="../projects">[projects]</a> I've completed as I add more throughout uni. I've also added a <a href="../blog">[blog]</a> section, which I may use to keep record of my notes, given the blog entries use the same markdown format as <a href="https://obsidian.md" target = "_blank">[obsidian.md]</a>. I'll also be using it to loosely document what I’m exploring over time.</p>
+  <div >
+    <p class="quote">"Volume negates luck."</p>
+    <p>This site exists primarily to document the <a href="../projects">[projects]</a> I've completed as I add more throughout uni. I've also added a <a href="../blog">[blog]</a> section, which I may use to keep record of my notes, given the blog entries use the same markdown format as <a href="https://obsidian.md" target = "_blank">[obsidian.md]</a>. I'll also be using it to loosely document what I’m exploring over time.</p>
+  </div>
     <Footer />
   </body>
 </html>
@@ -35,11 +36,15 @@ const pageTitle = "ronxvier";
 
 
 <style>
+  p {
+    margin-top: 1rem;
+  }
 	a:link {
-	  color: #A28D9E;
+	  color: #D8B4D6;
 	  font-family: 'JetBrains Mono', monospace;
 	  font-weight: 100;
-	  text-decoration: none;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
 	}
 
 	a:visited {
@@ -51,7 +56,39 @@ const pageTitle = "ronxvier";
 
 	a:hover,
 	a:focus {
-	  color: #D5C4D6;
-	  text-decoration: underline;
-	}
+	  color: #D8B4D6;
+    text-decoration: underline;
+    text-shadow:
+      0 0 20px rgba(130, 90, 255, 0.8);
+  }
+
+  .mainhead {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      margin-bottom: 0;
+  }
+  .subhead{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: italic;
+      margin-top: 0; 
+      color: #8a9fbf;
+      transition: text-shadow 0.3s ease, color 0.3s ease;
+  }
+  .quote{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 450;
+      font-style: italic;
+      margin-top: 1rem; 
+      margin-bottom: 0rem; 
+      color: #A2A8D3;
+  }
+  .subhead:hover {
+    color: #a5b8e8;
+    text-shadow: 0 0 20px rgba(112, 66, 255, 1);
+  }
+
 </style>
